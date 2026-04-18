@@ -839,7 +839,7 @@ function handleAppClick(event) {
 function handleCategorySelection(categoryId) {
   state.selectedCategoryId = categoryId;
   state.screen = "question";
-  track("start_selected_relationships", { categoryId });
+  track(`start_selected_${categoryId}`, { categoryId });
   render();
 }
 
