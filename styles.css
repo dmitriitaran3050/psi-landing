@@ -382,6 +382,17 @@ body {
   margin-top: 14px;
 }
 
+.pattern-question {
+  margin: 16px 0 0;
+  padding: 12px 16px;
+  border-left: 3px solid var(--accent);
+  background: rgba(170, 107, 75, 0.07);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.6;
+}
+
 .insight-title,
 .pattern-title,
 .prize-title {
