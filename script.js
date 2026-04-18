@@ -777,6 +777,7 @@ function renderPrize() {
       </div>
       <div class="button-row">
         <a class="primary-button" href="${prize.url}" data-track="cta_telegram_clicked">Получить подарок в Telegram</a>
+        <p class="footnote">* Проверь, что включен VPN.</p>
       </div>
       <div class="all-prizes-section">
         <p class="all-prizes-label">Все подарки этой игры</p>
