@@ -615,6 +615,9 @@ function resetState() {
 
 function track(eventName, payload = {}) {
   console.debug("[track]", eventName, payload);
+  if (typeof ym === "function") {
+    ym(108656678, "reachGoal", eventName, payload);
+  }
 }
 
 function render() {
