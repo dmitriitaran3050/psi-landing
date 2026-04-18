@@ -773,7 +773,7 @@ function renderPrize() {
         <p>${escapeHtml(prize.description)}</p>
       </div>
       <div class="button-row">
-        <a class="primary-button" href="${prize.url}" target="_blank" rel="noreferrer" data-track="cta_telegram_clicked">Получить подарок в Telegram</a>
+        <a class="primary-button" href="${prize.url}" data-track="cta_telegram_clicked">Получить подарок в Telegram</a>
       </div>
       <div class="all-prizes-section">
         <p class="all-prizes-label">Все подарки этой игры</p>
