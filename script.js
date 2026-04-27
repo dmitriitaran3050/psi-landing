@@ -528,7 +528,8 @@ const APP_DATA = {
       id: "prize-1",
       diceFace: 1,
       weight: 25,
-      url: "https://s.salebot.pro//psi-gift-1_1",
+      telegramUrl: "https://s.salebot.pro//psi-gift-1_1",
+      maxUrl: "https://s.salebot.pro//psi-gift-1_20",
       title: "Книга «111 рецептов для счастья» с автографом автора",
       subtitle: "Практики самопомощи для сложных моментов",
       description:
@@ -538,7 +539,8 @@ const APP_DATA = {
       id: "prize-2",
       diceFace: 2,
       weight: 25,
-      url: "https://s.salebot.pro//psi-gift-2_1",
+      telegramUrl: "https://s.salebot.pro//psi-gift-2_1",
+      maxUrl: "https://s.salebot.pro//psi-gift-2_20",
       title: "Скидка 2000 ₽ на индивидуальную игру «Лила» с клиническим психологом",
       subtitle: "Чтобы глубже разобрать свой запрос",
       description:
@@ -548,7 +550,8 @@ const APP_DATA = {
       id: "prize-3",
       diceFace: 3,
       weight: 10,
-      url: "https://s.salebot.pro//psi-gift-3_1",
+      telegramUrl: "https://s.salebot.pro//psi-gift-3_1",
+      maxUrl: "https://s.salebot.pro//psi-gift-3_20",
       title: "30-минутная онлайн-диагностика с клиническим психологом",
       subtitle: "Чтобы понять, что происходит и куда двигаться",
       description:
@@ -558,7 +561,8 @@ const APP_DATA = {
       id: "prize-4",
       diceFace: 4,
       weight: 2,
-      url: "https://s.salebot.pro//psi-gift-4_1",
+      telegramUrl: "https://s.salebot.pro//psi-gift-4_1",
+      maxUrl: "https://s.salebot.pro//psi-gift-4_20",
       title: "Онлайн-упражнение «Я-звезда» с клиническим психологом",
       subtitle: "Для опоры, самоценности и более тёплого взгляда на себя",
       description:
@@ -568,7 +572,8 @@ const APP_DATA = {
       id: "prize-5",
       diceFace: 5,
       weight: 2,
-      url: "https://s.salebot.pro//psi-gift-5_1",
+      telegramUrl: "https://s.salebot.pro//psi-gift-5_1",
+      maxUrl: "https://s.salebot.pro//psi-gift-5_20",
       title: "Скидка 5000 ₽ на индивидуальную игру «Лила» с клиническим психологом",
       subtitle: "Для глубокой работы с важным для тебя запросом",
       description:
@@ -578,7 +583,8 @@ const APP_DATA = {
       id: "prize-6",
       diceFace: 6,
       weight: 2,
-      url: "https://s.salebot.pro//psi-gift-6_1",
+      telegramUrl: "https://s.salebot.pro//psi-gift-6_1",
+      maxUrl: "https://s.salebot.pro//psi-gift-6_20",
       title: "Онлайн-игра «Тревога» с клиническим психологом",
       subtitle: "Чтобы лучше понять свою тревогу и вернуть внутреннюю опору",
       description:
@@ -776,7 +782,8 @@ function renderPrize() {
         <p>${escapeHtml(prize.description)}</p>
       </div>
       <div class="button-row">
-        <a class="primary-button" href="${prize.url}" data-track="cta_telegram_clicked">Получить подарок в Telegram</a>
+        <a class="primary-button" href="${prize.maxUrl}" data-track="cta_max_clicked">Получить подарок в Max</a>
+        <a class="primary-button" href="${prize.telegramUrl}" data-track="cta_telegram_clicked">Получить подарок в Telegram</a>
         <p class="footnote">* Проверь, что включен VPN.</p>
       </div>
       <div class="all-prizes-section">
