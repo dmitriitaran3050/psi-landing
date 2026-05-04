@@ -2,26 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Запись на игру через мессенджер</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Что тебя держит на месте?</title>
     <meta
       name="description"
-      content="Выберите удобный мессенджер для записи на психологическую игру про денежный запрос. После регистрации поможем подобрать ближайшее удобное время."
+      content="Мягкий интерактивный сценарий саморефлексии: выбери сферу, ответь на 3 вопроса и получи первый инсайт."
     />
-    <meta property="og:title" content="Запишитесь на игру через удобный мессенджер" />
-    <meta
-      property="og:description"
-      content="Выберите Max, Telegram или VK — я напишу вам, пришлю свободные окна и помогу подобрать время."
-    />
-    <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Lora:wght@600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Lora:ital,wght@0,500;0,700;1,500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="icon" href="./assets/icon-max.svg" type="image/svg+xml" />
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -39,61 +32,12 @@
     <!-- /Yandex.Metrika counter -->
   </head>
   <body>
-    <main class="page" aria-labelledby="page-title">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Психологическая игра про денежный запрос</p>
-          <h1 id="page-title">Запишитесь на игру через удобный мессенджер</h1>
-          <p class="lead">
-            Выберите мессенджер ниже — я напишу вам и помогу подобрать ближайшее удобное время.
-          </p>
-        </div>
-
-        <div class="after-card" aria-labelledby="after-title">
-          <h2 id="after-title">После записи</h2>
-          <ol>
-            <li>Пришлю детали и свободные временные окна.</li>
-            <li>Вы выберете подходящее время.</li>
-            <li>Разберём ваш конкретный денежный запрос и начнём работу над ним.</li>
-          </ol>
-        </div>
-
-        <nav class="messenger-grid" aria-label="Выберите мессенджер для регистрации">
-          <a
-            class="messenger-button messenger-button--max"
-            href="https://s.salebot.pro/psi-game-money_20"
-            data-channel="max"
-            aria-label="Записаться на игру в Max"
-          >
-            <span class="messenger-icon" aria-hidden="true"></span>
-            <span>Max</span>
-          </a>
-          <a
-            class="messenger-button messenger-button--vk"
-            href="https://vk.ru/app7062840#psi-game-money&amp;force=1"
-            data-channel="vk"
-            aria-label="Записаться на игру в VK"
-          >
-            <span class="messenger-icon" aria-hidden="true"></span>
-            <span>VK</span>
-          </a>
-          <a
-            class="messenger-button messenger-button--telegram"
-            href="https://s.salebot.pro/psi-game-money_1"
-            data-channel="telegram"
-            aria-label="Записаться на игру в Telegram"
-          >
-            <span class="messenger-icon" aria-hidden="true"></span>
-            <span>Telegram</span>
-          </a>
-        </nav>
-
-        <aside class="telegram-note" aria-label="Важно для Telegram">
-          <strong>Для записи через Telegram</strong>
-          <span>* Проверьте, что включён VPN.</span>
-        </aside>
-      </section>
-    </main>
+    <div class="page-shell">
+      <main class="app" id="app" aria-live="polite"></main>
+    </div>
+    <noscript>
+      Для работы лендинга нужен JavaScript.
+    </noscript>
     <script src="./script.js"></script>
   </body>
 </html>
