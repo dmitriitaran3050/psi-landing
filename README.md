@@ -1,6 +1,6 @@
 # Gamification Event Landing
 
-Локальная папка для MVP-лендинга по механике из `draft/plan_gamification_event.md`.
+Локальная папка для MVP-лендинга по механике из `archive/draft/plan_gamification_event.md` (в архиве воркспейса).
 
 ## Что здесь будет
 
